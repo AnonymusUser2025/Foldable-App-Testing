@@ -18,10 +18,18 @@ This repository contains the artifacts for the research paper titled "Unfolding 
   - Appium (install via `npm install -g appium`).
   - TestNG (via Maven or manual setup).
   - Android SDK with UIAutomator2 driver.
-- **Hardware**: Access to foldable devices listed above.
+- **Hardware**: Access to foldable devices listed above with Android 15.
 - **Dependencies**: Install required libraries 
 ## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/AnonymusUser2025/Foldable-App-Testing.git
    cd Foldable-App-Testing
+2. Install dependencies (download Node.js and use it to install Appium)
+   ```bash
+   node -v
+   npm -v
+   npm install -g appium
+3. Set up Appium Server
+   ```bash
+   appium 
