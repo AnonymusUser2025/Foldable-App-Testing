@@ -53,7 +53,7 @@ This repository contains the artifacts for the research paper titled "Unfolding 
 ## Device configuration for Test activity
 ---
 
-#### 3. config/devices.json
+## config/devices.json
 Device configurations for test execution.
 
 ```json
@@ -91,9 +91,9 @@ Maven configuration setup for Java/TestNG
 ``` XML
 ---
 
-#### 3. config/devices.json
+config/devices.json
 Device configurations for test execution.
-
+```
 ```json
 {
   "devices": [
@@ -146,4 +146,19 @@ TestNG suite Configuration
         </classes>
     </test>
 </suite>
+```
+## Results
+Sample analysis output
+```MARKDOWN
+# Analysis Results
+
+## Best Buy on Samsung Galaxy Z Flip6
+- **Pre-Unfold UI Dump**: Elements aligned, no overlap.
+- **Post-Unfold UI Dump**: Button "Add to Cart" shifted 50px right, text size increased from 14sp to 18sp.
+- **Issues**: Loss of relative position, no crash.
+
+## AliExpress on Motorola Razr 2023
+- **Pre-Unfold UI Dump**: Navigation menu visible on cover.
+- **Post-Unfold UI Dump**: Menu clipped, lag of 2.3s.
+- **Issues**: Resize error, I/O lag.
 ```
