@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hierarchy rotation="0">
+  <node index="0" text="" resource-id="com.aspyr.civvi:id/root_container"
+        class="android.widget.FrameLayout"
+        package="com.aspyr.civvi"
+        bounds="[0,0][2400,1600]">
+
+    <node index="1" text="Washington"
+          resource-id="com.aspyr.civvi:id/city_name"
+          class="android.widget.TextView"
+          bounds="[100,100][600,180]" />
+
+    <node index="2" text="Turn 42"
+          resource-id="com.aspyr.civvi:id/turn_counter"
+          class="android.widget.TextView"
+          bounds="[2000,100][2350,180]" />
+
+    <node index="3" text="" resource-id=""
+          class="android.view.ViewGroup"
+          content-desc="Mini-map"
+          bounds="[1800,1200][2350,1580]" />
+
+    <node index="4" text="Build"
+          resource-id="com.aspyr.civvi:id/action_button_build"
+          class="android.widget.Button"
+          bounds="[100,1400][400,1500]" />
+
+    <node index="5" text="Move"
+          resource-id="com.aspyr.civvi:id/action_button_move"
+          class="android.widget.Button"
+          bounds="[420,1400][720,1500]" />
+  </node>
+</hierarchy>
+

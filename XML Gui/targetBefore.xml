@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hierarchy rotation="0">
+  <node index="0" text="" resource-id="com.target.ui:id/root_view"
+        class="android.widget.FrameLayout"
+        package="com.target.ui"
+        bounds="[0,0][1080,2400]">
+
+    <node index="1" text="Search by ZIP code or city, state"
+          resource-id="com.target.ui:id/location_entry_prompt"
+          class="android.widget.TextView"
+          bounds="[80,250][1000,320]" />
+
+    <node index="2" text=""
+          resource-id="com.target.ui:id/search_field"
+          class="android.widget.EditText"
+          content-desc="Enter ZIP code or city and state"
+          bounds="[80,340][1000,420]" />
+
+    <node index="3" text="Newark, NJ"
+          resource-id="com.target.ui:id/autocomplete_suggestion"
+          class="android.widget.TextView"
+          bounds="[80,450][1000,520]" />
+
+    <node index="4" text="Keyboard"
+          resource-id="com.android.inputmethod.latin:id/keyboard_view"
+          class="android.inputmethodservice.KeyboardView"
+          package="com.android.inputmethod.latin"
+          bounds="[0,1800][1080,2400]" />
+  </node>
+</hierarchy>
+

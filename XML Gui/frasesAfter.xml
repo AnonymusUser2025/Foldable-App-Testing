@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hierarchy rotation="0">
+  <node index="0" text="" resource-id="android:id/content"
+        class="android.widget.FrameLayout"
+        package="com.frasesyreflexiones.saludosparatodaocasion"
+        bounds="[0,0][1080,2400]">
+
+    <node index="1" text="Saludos para toda ocasión"
+          resource-id="com.frasesyreflexiones.saludosparatodaocasion:id/app_title"
+          class="android.widget.TextView"
+          bounds="[300,100][780,180]" />
+
+    <node index="2" text="Cumpleaños"
+          resource-id="com.frasesyreflexiones.saludosparatodaocasion:id/category_button_1"
+          class="android.widget.Button"
+          bounds="[100,400][1000,500]" />
+
+    <node index="3" text="Amistad"
+          resource-id="com.frasesyreflexiones.saludosparatodaocasion:id/category_button_2"
+          class="android.widget.Button"
+          bounds="[100,520][1000,620]" />
+
+    <node index="4" text="Navidad"
+          resource-id="com.frasesyreflexiones.saludosparatodaocasion:id/category_button_3"
+          class="android.widget.Button"
+          bounds="[100,640][1000,740]" />
+  </node>
+</hierarchy>
+

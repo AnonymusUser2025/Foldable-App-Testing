@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hierarchy rotation="0">
+  <node index="0" text="" resource-id=""
+        class="android.widget.FrameLayout"
+        package="nes.snes.gba.fcemulator.n64"
+        bounds="[0,0][2400,1600]">
+
+    <node index="1" text="Retro64 Emulator"
+          resource-id="nes.snes.gba.fcemulator.n64:id/title_text"
+          class="android.widget.TextView"
+          bounds="[800,100][1600,200]" />
+
+    <node index="2" text="Load Game"
+          resource-id="nes.snes.gba.fcemulator.n64:id/load_game_button"
+          class="android.widget.Button"
+          bounds="[900,400][1500,500]" />
+
+    <node index="3" text="Settings"
+          resource-id="nes.snes.gba.fcemulator.n64:id/settings_button"
+          class="android.widget.Button"
+          bounds="[900,520][1500,620]" />
+
+    <node index="4" text="Exit"
+          resource-id="nes.snes.gba.fcemulator.n64:id/exit_button"
+          class="android.widget.Button"
+          bounds="[900,640][1500,740]" />
+  </node>
+</hierarchy>
+

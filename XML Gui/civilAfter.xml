@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hierarchy rotation="0">
+  <node index="0" text="" resource-id="com.aspyr.civvi:id/root_container"
+        class="android.widget.FrameLayout"
+        package="com.aspyr.civvi"
+        bounds="[0,0][2400,1600]">
+
+    <node index="1" text="Sid Meier's Civilization VI"
+          resource-id="com.aspyr.civvi:id/title_banner"
+          class="android.widget.TextView"
+          bounds="[600,200][1800,300]" />
+
+    <node index="2" text="New Game"
+          resource-id="com.aspyr.civvi:id/btn_new_game"
+          class="android.widget.Button"
+          bounds="[900,500][1500,600]" />
+
+    <node index="3" text="Load Game"
+          resource-id="com.aspyr.civvi:id/btn_load_game"
+          class="android.widget.Button"
+          bounds="[900,620][1500,720]" />
+
+    <node index="4" text="Settings"
+          resource-id="com.aspyr.civvi:id/btn_settings"
+          class="android.widget.Button"
+          bounds="[900,740][1500,840]" />
+  </node>
+</hierarchy>
+
