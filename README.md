@@ -32,4 +32,118 @@ This repository contains the artifacts for the research paper titled "Unfolding 
    npm install -g appium
 3. Set up Appium Server
    ```bash
-   appium 
+   appium
+4. Connect devices via USB. To check if the devices are connected, use
+ ```bash
+    adb devices
+```
+## Usage
+1. Edit config/devices.json with your device details
+2. Run test. (e.g. To run test on Best Buy)
+   ``` bash
+   python scripts/test_bestbuy.py
+3. View results in data/logs and data/ui_dumps/. directory
+
+## Directory Structure 
+•  scripts/: Test files (e.g., FoldableTest.java, test_bestbuy.py).
+•  config/: Configuration files (devices.json, testng.xml).
+•  data/: Logs, UI hierarchy XML dumps, and analysis results.
+•  pom.xml: Maven build file for Java.
+
+## Device configuration for Test activity
+---
+
+#### 3. config/devices.json
+Device configurations for test execution.
+
+```json
+{
+  "devices": [
+    {
+      "deviceName": "Samsung Galaxy Z Fold4",
+      "platformVersion": "14",
+      "appPackage": "com.bestbuy.android",
+      "appActivity": ".MainActivity"
+    },
+    {
+      "deviceName": "Samsung Galaxy Z Flip6",
+      "platformVersion": "14",
+      "appPackage": "com.bestbuy.android",
+      "appActivity": ".MainActivity"
+    },
+    {
+      "deviceName": "Google Pixel 9 Pro Fold",
+      "platformVersion": "14",
+      "appPackage": "com.aliexpress.app",
+      "appActivity": ".MainActivity"
+    },
+    {
+      "deviceName": "Motorola Razr 2023",
+      "platformVersion": "13",
+      "appPackage": "com.temu.app",
+      "appActivity": ".MainActivity"
+    }
+  ]
+}
+```
+## pom.xml
+Maven configuration setup for Java/TestNG
+``` XML
+---
+
+#### 3. config/devices.json
+Device configurations for test execution.
+
+```json
+{
+  "devices": [
+    {
+      "deviceName": "Samsung Galaxy Z Fold4",
+      "platformVersion": "14",
+      "appPackage": "com.bestbuy.android",
+      "appActivity": ".MainActivity"
+    },
+    {
+      "deviceName": "Samsung Galaxy Z Flip6",
+      "platformVersion": "14",
+      "appPackage": "com.bestbuy.android",
+      "appActivity": ".MainActivity"
+    },
+    {
+      "deviceName": "Google Pixel 9 Pro Fold",
+      "platformVersion": "14",
+      "appPackage": "com.aliexpress.app",
+      "appActivity": ".MainActivity"
+    },
+    {
+      "deviceName": "Motorola Razr 2023",
+      "platformVersion": "13",
+      "appPackage": "com.temu.app",
+      "appActivity": ".MainActivity"
+    }
+  ]
+}
+```
+## testng.xml
+TestNG suite Configuration
+```XML
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FoldableTestSuite" parallel="tests" thread-count="2">
+    <test name="BestBuyTest">
+        <parameter name="deviceName" value="Samsung Galaxy Z Flip6"/>
+        <parameter name="appPackage" value="com.bestbuy.android"/>
+        <parameter name="appActivity" value=".MainActivity"/>
+        <classes>
+            <class name="com.foldable.testing.FoldableTest"/>
+        </classes>
+    </test>
+    <test name="AliExpressTest">
+        <parameter name="deviceName" value="Motorola Razr 2023"/>
+        <parameter name="appPackage" value="com.aliexpress.app"/>
+        <parameter name="appActivity" value=".MainActivity"/>
+        <classes>
+            <class name="com.foldable.testing.FoldableTest"/>
+        </classes>
+    </test>
+</suite>
+```
